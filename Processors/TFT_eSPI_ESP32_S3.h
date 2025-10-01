@@ -215,8 +215,8 @@ SPI3_HOST = 2
 ////////////////////////////////////////////////////////////////////////////////////////
 #ifndef TFT_CS
   #define TFT_CS -1  // Keep DMA code happy
-  #define CS_L       // No macro allocated so it generates no code
-  #define CS_H       // No macro allocated so it generates no code
+  #define CS_L  lcd_cs_ctl(0)     // Umeko_externel funcs
+  #define CS_H  lcd_cs_ctl(1)     // Umeko_externel funcs
 #else
   #if defined (TFT_PARALLEL_8_BIT)
     #if TFT_CS >= 32
