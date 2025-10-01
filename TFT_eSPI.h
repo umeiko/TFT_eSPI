@@ -29,6 +29,10 @@
 //Standard support
 #include <Arduino.h>
 #include <Print.h>
+// ===================Umeko_fixed========================
+#include "logger.h"
+#include "globals.h"
+// ===================Umeko_fixed========================
 #if !defined (TFT_PARALLEL_8_BIT) && !defined (RP2040_PIO_INTERFACE)
   #include <SPI.h>
 #endif
